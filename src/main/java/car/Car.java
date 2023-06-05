@@ -8,7 +8,9 @@ public class Car implements Serializable {
     private String model;
     int year;
     double price;
+    private static final long serialVersionUID = 1;
 
+    public Car(){};
     public Car(String brand, String model, int year, double price) {
         this.brand = brand;
         this.model = model;

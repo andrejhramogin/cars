@@ -28,14 +28,14 @@ public class Method {
     }
 
     //авто с самой большой ценой
-    public static List<Car> createCarMaxPriceList(List<Car> list, double maxPrice) {
+    public static List<Car> createCarListMaxPrice(List<Car> list, double maxPrice) {
         return list.stream()
                 .filter(i -> i.getPrice() == maxPrice)
                 .collect(Collectors.toList());
     }
 
     //авто с минимальной ценой
-    public static List<Car> createCarMinPriceList(List<Car> list, double minPrice) {
+    public static List<Car> createCarListMinPrice(List<Car> list, double minPrice) {
         return list.stream()
                 .filter(i -> i.getPrice() == minPrice)
                 .collect(Collectors.toList());

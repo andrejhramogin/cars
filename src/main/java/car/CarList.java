@@ -6,8 +6,10 @@ import java.util.List;
 public class CarList implements Serializable {
 
     private List<Car> carList;
+    private static final long serialVersionUID = 1;
 
     public CarList(){};
+
     public CarList (List<Car> carList){
         this.carList = carList;
     }

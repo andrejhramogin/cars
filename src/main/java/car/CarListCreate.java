@@ -2,11 +2,12 @@ package car;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CarListCreate {
 
-    public static CarList createCarList() {
-        return  new CarList(new ArrayList<>(Arrays.asList(
+    public static List<Car> createCarList() {
+        return new ArrayList<>(Arrays.asList(
                 new Car("Toyota", "Camry", 2010, 10000.0),
                 new Car("Toyota", "Camry", 2012, 12000.5),
                 new Car("Toyota", "Camry", 2014, 14000.6),
@@ -17,6 +18,6 @@ public class CarListCreate {
                 new Car("BMW", "720", 2015, 16000.0),
                 new Car("Opel", "Astra", 2003, 4000.8),
                 new Car("Opel", "Corsa", 2020, 13000.8),
-                new Car("Opel", "Zafira", 2019, 11000.8))));
+                new Car("Opel", "Zafira", 2019, 11000.8)));
     }
 }

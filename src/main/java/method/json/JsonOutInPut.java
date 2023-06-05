@@ -1,39 +1,33 @@
 package method.json;
 
+import car.Car;
+import car.CarListCreate;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import method.PrintList;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 
 public class JsonOutInPut {
 
-}
-/*
-import org.json.JSONException;
-import org.json.JSONObject;
+    //запись с помощью JSON в файл filename.json
+        public static void jsonWriteCarList(List<Car>list, String fileName) throws IOException {
 
-import java.io.FileWriter;
-import java.io.PrintWriter;
-import java.util.List;
-
-public class Main
-{
-    public static void main(String[] args)
-    {
-        String path = "/app/json/companies.json";
-
-        JSONObject json = new JSONObject();
+            ObjectMapper mapper = new ObjectMapper();
         try {
-            json.put("name", "Google");
-            json.put("employees", 140000);
-            json.put("offices", List.of("Mountain View", "Los Angeles", "New York"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        try (PrintWriter out = new PrintWriter(new FileWriter(path))) {
-            out.write(json.toString());
-        } catch (Exception e) {
-            e.printStackTrace();
+            mapper.writeValue(new File(fileName+".json"), list);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
+
+    //чтение из файла filename.json List<Car>
+    //В классе Car должен быть создан пустой конструктор.
+    public static List<Car> jsonReadCarList(String fileName) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.readValue(new File(fileName + ".json"), new TypeReference<List<Car>>(){});
+    }
+
 }
-
-
- */
