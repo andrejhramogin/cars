@@ -7,6 +7,7 @@ public class CarList implements Serializable {
 
     private List<Car> carList;
 
+    public CarList(){};
     public CarList (List<Car> carList){
         this.carList = carList;
     }

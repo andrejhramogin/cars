@@ -5,14 +5,18 @@ import car.CarListCreate;
 import method.Method;
 import method.PrintList;
 import method.Sort;
+import method.WriteRead;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        List<Car> list = CarListCreate.createCarList().getCarList(); //создание листа машин
+        WriteRead.writeCarList(CarListCreate.createCarList().getCarList(), "carlist");//создание листа и запись в "carlist.bin"
 
+        List<Car> list = WriteRead.readCarList("carlist"); //чтение листа из "carlist.bin" для дальнейших операций
+
+        System.out.println("Cars list: ");
         PrintList.printCarList(list); //вывод листа
         System.out.println();
 

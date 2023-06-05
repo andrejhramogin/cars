@@ -15,7 +15,7 @@ public class PrintList {
     }
 
     public static void printCarList(List<Car> carList) {
-        if (carList.isEmpty()) {
+        if (carList==null) {
             System.out.println("List is empty");
         } else {
             carList.forEach(PrintList::printCar);
