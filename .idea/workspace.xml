@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaee5163-51aa-4bd1-81e9-b339a1c04fae" name="Changes" comment="added write/read methods">
-      <change afterPath="$PROJECT_DIR$/cars.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyota.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyota.json" afterDir="false" />
+    <list default="true" id="aaee5163-51aa-4bd1-81e9-b339a1c04fae" name="Changes" comment="added JSON write/read methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/car/CarsOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carlist.bin" beforeDir="false" afterPath="$PROJECT_DIR$/carlist.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carlist.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/car/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/car/CarList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/car/CarList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/car/CarListCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/car/CarListCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/method/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/method/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/method/Method.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/method/PrintList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/method/PrintList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/method/json/JsonOutInPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/method/json/JsonOutInPut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/method/Sort.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toyota.bin" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +42,14 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/andrei/IdeaProjects/cars/src/main/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/andrei/IdeaProjects/cars/src/main/java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685962135879</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added JSON write/read methods">
+      <created>1685974021428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685974021428</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +155,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="added write/read methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added write/read methods" />
+    <MESSAGE value="added JSON write/read methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added JSON write/read methods" />
   </component>
 </project>

@@ -2,21 +2,21 @@ package car;
 
 import java.io.Serializable;
 
-public class Car implements Serializable {
+public class Car {
 
     private String brand;
     private String model;
-    int year;
-    double price;
-    private static final long serialVersionUID = 1;
+    private int year;
+    private double price;
 
-    public Car(){};
     public Car(String brand, String model, int year, double price) {
         this.brand = brand;
         this.model = model;
         this.year = year;
         this.price = price;
     }
+
+    public Car(){}
 
     public String getBrand() {
         return brand;
@@ -50,5 +50,10 @@ public class Car implements Serializable {
         this.price = price;
     }
 
-
+    public String toString() {
+        return ("Brand: " + brand + ", " +
+                "Model: " + model + ", " +
+                "Year of manufacture: " + year + ", " +
+                "Price: " + price + ".");
+    }
 }
